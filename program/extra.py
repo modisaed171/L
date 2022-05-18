@@ -53,7 +53,7 @@ async def broadcast(c: Client, message: Message):
     await message.reply_text(f"✅ تمت الاذاعه إلى {sent} جروب في البوت.")
 
 
-@Client.on_message(command(["ذت", f"اذت"]) & ~filters.edited)
+@Client.on_message(command(["ثبت", f"تثبيت"]) & ~filters.edited)
 @sudo_users_only
 async def broadcast_pin(c: Client, message: Message):
     if not message.reply_to_message:

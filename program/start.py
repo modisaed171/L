@@ -58,7 +58,7 @@ async def _human_time_duration(seconds):
     return ", ".join(parts)
 
 
-@Client.on_message(command("start") & filters.private & ~filters.edited)
+@Client.on_message(command("SEZR") & filters.private & ~filters.edited)
 async def start_(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{BOT_PHOTO}",
@@ -73,20 +73,20 @@ async def start_(client: Client, message: Message):
             [
                 [
                     InlineKeyboardButton(
-                        "• نـصـب بـوتك مـن هـنا •", url="https://t.me/FA9SH/2270",
+                        "🧑‍💻┆الـمـطـور سـيـزر", url="https://t.me/U_SEZR",
                     )
                 ],
                 [InlineKeyboardButton("", callback_data="cbhowtouse")],
                 [
-                    InlineKeyboardButton("📚 الاوامر", callback_data="cbcmds"),
-                    InlineKeyboardButton("❤️ المطور", url=f"https://t.me/{OWNER_NAME}"),
+                    InlineKeyboardButton("🤖┆اوامــر الـبــوت", callback_data="cbcmds"),
+                    InlineKeyboardButton("🧑‍💻┆مـطـور الــبــوت", url=f"https://t.me/{OWNER_NAME}"),
                 ],
                 [
                     InlineKeyboardButton(
-                        "👥 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "⚙️┆جــروب الـدعـم", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
-                        "📣 قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}"
+                        "🌐┆قـنـاة الــبـوت", url=f"https://t.me/{UPDATES_CHANNEL}"
                     ),
                 ],
                 [
@@ -100,7 +100,7 @@ async def start_(client: Client, message: Message):
     )
 
 
-@Client.on_message(command(["برمج السورس", f"ؤمن", f"ورس", f"لسورس", f"ادو", f"اضو"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["", f"", f"", f"", f"", f""]) & filters.group & ~filters.edited)
 async def start(client: Client, message: Message):
     await message.reply_photo(
         photo=f"https://telegra.ph/file/18b88af791e36bf3c4259.jpg",
@@ -108,11 +108,11 @@ async def start(client: Client, message: Message):
         reply_markup=InlineKeyboardMarkup(
          [
             [
-                InlineKeyboardButton("𓌹●↯‌𝑫𝑨𝑫 𝑺𝑯𝑨𝑫𝑶𝑾↯●𓌺", url=f"https://t.me/KB_Shadow"),
+                InlineKeyboardButton("", url=f"https://t.me/U_SEZR"),
             ],
             [
                 InlineKeyboardButton(
-                    "𝑬𝑹𝑹𝑶𝑹🖤", url=f"https://t.me/FA9SH"
+                    "xph", url=f"https://t.me/U_SEZR"
                 ),
             ],
             [
@@ -122,7 +122,7 @@ async def start(client: Client, message: Message):
      )
   )
 
-@Client.on_message(command(["لمطور", "طور"]) & filters.group & ~filters.edited)
+@Client.on_message(command(["", ""]) & filters.group & ~filters.edited)
 async def help(client: Client, message: Message):
     await message.reply_photo(
         photo=f"{DEV_PHOTO}",
@@ -200,7 +200,7 @@ async def new_chat(c: Client, m: Message):
                 reply_markup=InlineKeyboardMarkup(
                     [
                         [
-                            InlineKeyboardButton("📣 قناة البوت", url=f"https://t.me/{UPDATES_CHANNEL}"),
+                            InlineKeyboardButton("🌐┆قـنـاة الــبـوت", url=f"https://t.me/{UPDATES_CHANNEL}"),
                             InlineKeyboardButton("💭 جروب الدعم", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
